@@ -1,6 +1,6 @@
 package problems;
 
-import common.CommonMath;
+import common.BaseMath;
 
 public class p0005
 {
@@ -20,7 +20,7 @@ public class p0005
      */
     private void p0005()
     {
-        long result = CommonMath.LCM(build(20));
+        long result = BaseMath.LCM(build(20));
 
         System.out.format("result: %s", result);  // 232792560
     }

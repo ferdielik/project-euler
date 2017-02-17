@@ -1,6 +1,6 @@
 package problems;
 
-import common.CommonMath;
+import common.BaseMath;
 
 public class p0004
 {
@@ -27,7 +27,7 @@ public class p0004
             for (int j = 100; j < 1000; j++)
             {
                 long mul = i * j;
-                if (CommonMath.isPalindromic(mul) && mul > result)
+                if (BaseMath.isPalindromic(mul) && mul > result)
                 {
                     result = mul;
                 }

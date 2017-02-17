@@ -2,7 +2,7 @@ package problems;
 
 import java.util.Set;
 
-import common.CommonMath;
+import common.BaseMath;
 
 public class p0003
 {
@@ -23,7 +23,7 @@ public class p0003
      */
     private void p0003()
     {
-        Set<Long> primeNumbers = CommonMath.primeMultipliersSet(number);
+        Set<Long> primeNumbers = BaseMath.primeMultipliersSet(number);
 
         long max = primeNumbers.stream().max(Long::compare).get();
 

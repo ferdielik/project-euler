@@ -1,6 +1,6 @@
 package problems;
 
-import common.CommonMath;
+import common.BaseMath;
 
 public class p0006
 {
@@ -30,7 +30,7 @@ public class p0006
     {
         double sumOfTheSquare = 0;
 
-        double factorial = CommonMath.factorial(num);
+        double factorial = BaseMath.factorial(num);
         double squareOfTheSum = factorial * factorial;
 
         for (double i = 0; i <= num; i++)

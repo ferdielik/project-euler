@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * Created by ferdielik on 16/02/2017.
  */
-public class CommonMath
+public class BaseMath
 {
     public static double factorial(double number)
     {
@@ -113,11 +113,11 @@ public class CommonMath
         return true;
     }
 
-    public static boolean isPrimeNumber(long number)
+    public static boolean isPrimeNumber(Number number)
     {
-        for (long i = 2; i < number; i++)
+        for (long i = 2; i < number.longValue(); i++)
         {
-            if (number % i == 0)
+            if (number.longValue() % i == 0)
                 return false;
         }
         return true;
