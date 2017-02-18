@@ -115,7 +115,17 @@ public class BaseMath
 
     public static boolean isPrimeNumber(Number number)
     {
-        for (long i = 2; i < number.longValue(); i++)
+        if (number.longValue() == 1)
+            return false;
+
+        if (number.longValue() == 2)
+            return true;
+
+        if (number.longValue() % 2 == 0)
+            return false;
+
+        long top = (int) Math.sqrt(number.longValue()) + 1;
+        for (long i = 3; i < top; i += 2)
         {
             if (number.longValue() % i == 0)
                 return false;

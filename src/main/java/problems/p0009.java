@@ -42,22 +42,20 @@ public class p0009
                     b += bincrease;
                     c = len - (a + b);
 
-                    if (a > b || b > c || c <= 0 || possibilities.contains(String.format("%s%s%s", a, b, c)))
+                    if (a > b || b > c || c <= 0 || possibilities.contains(String.format("%s", a * b * c)))
                     {
                         break;
                     }
 
-                    possibilities.add(String.format("%s%s%s", a, b, c));
+                    possibilities.add(String.format("%s", a * b * c));
 
                     if (a * a + b * b == c * c)
                     {
                         System.out.format("a: %s, b: %s, c: %s \n", a, b, c);
-                        System.out.format("result: %s%s%s\n", a, b, c);  // 200375425
+                        System.out.format("result: %s", a * b * c); // 31875000
                     }
                 }
             }
         }
-
-
     }
 }
