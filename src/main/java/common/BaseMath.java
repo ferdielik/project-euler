@@ -1,7 +1,9 @@
 package common;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -132,4 +134,24 @@ public class BaseMath
         }
         return true;
     }
+
+    public static List<Long> findDivisors(long number)
+    {
+        List<Long> divisors = new ArrayList<>();
+
+        long maxD = (long) Math.sqrt(number);
+        for (long i = 2; i <= maxD; i++)
+        {
+            if (number % i == 0)
+            {
+                divisors.add(i);
+                long d = number / i;
+                if (d != i)
+                    divisors.add(d);
+            }
+        }
+
+        return divisors;
+    }
+
 }
