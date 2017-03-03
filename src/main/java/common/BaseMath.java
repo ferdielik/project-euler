@@ -1,5 +1,6 @@
 package common;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -12,6 +13,15 @@ import java.util.Set;
  */
 public class BaseMath
 {
+//    public static BigInteger pow(BigInteger a, BigInteger b)
+//    {
+//        BigInteger pow = a.;
+//        for (int i = 0; i < b.intValue(); i++)
+//        {
+//
+//        }
+//    }
+
     public static double factorial(double number)
     {
         double sum = 0;

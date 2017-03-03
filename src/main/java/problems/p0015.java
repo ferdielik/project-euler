@@ -16,7 +16,6 @@ public class p0015 extends AbstractProblem
     public void run() throws Exception
     {
 
-        //        System.out.println("result: " + maxNumber);
     }
 
 }
