@@ -22,15 +22,26 @@ public class p0110 extends AbstractProblem
     public void run() throws Exception
     {
 
-        double x = 0, y = 0, n = 0;
-        n = x * y / x + y;
+        int counter = 0;
+        double n = 10;
+        double start = 0;
+        double limit = n * 110;
+        //                n * n * 2;
 
-
-        for (x = 0, y = 0; y < 100; x++, y++)
+        for (double x = start; x < limit; x++)
         {
+            for (double y = start; y < limit; y++)
+            {
+                if (n == (x * y) / (x + y))
+                {
+                    counter++;
+                    System.out.format("\nsolution : x: %s, y: %s", x, y);
+                }
 
+            }
         }
 
+        System.out.println("total solution count : " + counter);
 
 
     }
